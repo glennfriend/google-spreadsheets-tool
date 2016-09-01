@@ -40,8 +40,11 @@ function conf($key)
  *  取得專案路徑
  *  NOTE: 如果該程式移位, 請注意程式路徑可能要做變更
  */
-function getProjectPath()
+function getProjectPath($url=null)
 {
+    if ($url) {
+        return dirname(__DIR__) . '/' .ltrim($url, '/');
+    }
     return dirname(__DIR__);
 }
 

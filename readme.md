@@ -1,8 +1,7 @@
 ## Google Spreadsheets Tool
 - 申請 https://console.developers.google.com/
 - 建立 API 憑證 OAuth
-- 取得
-    - CLIENT_ID
+- 取得以下資料, 並填到設定檔案中
     - CLIENT_EMAIL
     - p12 key
 - 建立 google sheet 並且共用給使用者 CLIENT_EMAIL
@@ -26,5 +25,5 @@ php autorun.php
 
 ### Execute
 ```sh
-php public/index.php
+php shell/test-google-sheet.php
 ```
