@@ -16,7 +16,7 @@ class CliManager
     public static function init($arguments)
     {
         if ($arguments) {
-            self::$args = CommandLine::parseArgs($arguments);
+            self::$args = \CommandLine::parseArgs($arguments);
         }
     }
 
