@@ -10,10 +10,12 @@ gulp.task('buildHomeAssets', function () {
 /**
  *  back-end resource
  */
+/*
 gulp.task('buildAdminAssets', function () {
     gulp.src('./node_modules/bootstrap-v4-dev/dist/**') .pipe(gulp.dest("../home/admin/assets/bootstrap/"));
     gulp.src('./node_modules/jquery/dist/*')            .pipe(gulp.dest("../home/admin/assets/jquery/"));
 });
+*/
 
 // --------------------------------------------------------------------------------
 
