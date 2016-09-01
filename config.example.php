@@ -12,4 +12,15 @@ return [
             'name' => 'Google Spreadsheets Tool',
         ],
     ],
+    'google' => [
+        'web1' => [
+            'key_file'      => 'var/web1.p12',
+            'client_email'  => '',
+            'sheet_1'  => [
+                'book'   => 'Book1',
+                'sheet'  => 'Sheet1',
+                'urlKey' => '',
+            ]
+        ]
+    ],
 ];

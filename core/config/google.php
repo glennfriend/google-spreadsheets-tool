@@ -3,16 +3,17 @@
 return [
 
     /**
-     *  供給 Product Lander Gowns 使用的資料
+     *  目標的 google sheet
      */
-
     'web1' => [
-        'key_file'      => 'var/sb_product_lander_gowns_key.p12',
-        'client_email'  => 'showroom-skus@sb-funky-inventory.iam.gserviceaccount.com',
+        // p12 key path
+        'key_file'      => 'var/web1.p12',
+        'client_email'  => 'xxxxxxxxxx@xxxxxxxxxx.gserviceaccount.com',
         'sheet_1'  => [
-            'book'   => 'Product Lander Gowns',
-            'sheet'  => 'Sheet1',
-            'urlKey' => '1Wd0bs8igEr4lCixTnQjJl1qUgD38eW8F5gkoBGklKik', // google spreadsheets url key, 可以從 browser 上看到 (url), 下載
+            'book'   => 'Book1',    // 名稱要相同, 是一個 key 的作用
+            'sheet'  => 'Sheet1',   // sheet key, 注意空白
+            // google spreadsheets url key, 可以從 browser 上看到 url, 下載
+            'urlKey' => '1Ab1Ab1Ab1Ab1Ab1Ab1Ab1Ab1Ab1Ab1Ab1Ab1Ab1Ab1A',
         ],
     ],
 
