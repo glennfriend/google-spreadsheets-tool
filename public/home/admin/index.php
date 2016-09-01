@@ -1,5 +1,5 @@
 <?php
-$basePath = dirname(dirname(__DIR__));
+$basePath = dirname(dirname(dirname(__DIR__)));
 require_once $basePath . '/core/bootstrap.php';
 $app = ProjectHelper::buildApp();
 
