@@ -38,7 +38,7 @@ final class Versions
   'zendframework/zend-db' => '2.8.1@c9fa8fdab194093fff58e4f1180c7e15d80a2cb5',
   'zendframework/zend-eventmanager' => '3.0.1@5c80bdee0e952be112dcec0968bad770082c3a6e',
   'zendframework/zend-stdlib' => '3.0.1@8bafa58574204bdff03c275d1d618aaa601588ae',
-  '__root__' => '1.0.0.0@',
+  '__root__' => '9999999-dev@ec7c4e64eda973562ae91966b4e468fecc2c5a6e',
 );
 
     private function __construct()

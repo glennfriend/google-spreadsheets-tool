@@ -1,7 +1,7 @@
 <?php
 use App\Utility\Config\Config;
 
-function initialize($basePath)
+$initialize = function()
 {
     // --------------------------------------------------------------------------------
     //  start
@@ -15,6 +15,7 @@ function initialize($basePath)
      *  load helper function
      */
     include ('helper.php');
+    $basePath = getProjectPath();
 
     /**
      *  load composer
@@ -121,4 +122,6 @@ function initialize($basePath)
         exit;
     }
 
-}
+};
+$initialize();
+unset($initialize);

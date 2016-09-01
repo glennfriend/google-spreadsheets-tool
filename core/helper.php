@@ -14,7 +14,7 @@ use App\Utility\Console\ConsoleHelper;
  */
 function isTraining()
 {
-    if ( 'training' === conf('app.env') ) {
+    if ('training' === conf('app.env')) {
         return true;
     }
     return false;

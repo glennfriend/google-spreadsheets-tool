@@ -5,7 +5,6 @@
 
 $basePath = dirname(__DIR__);
 require_once $basePath . '/core/bootstrap.php';
-initialize($basePath);
 
 use App\Model\Users;
 use App\Model\User;
@@ -44,7 +43,7 @@ foreach ($userItems as $data) {
     $user->setEmail(        $data['account'] . '@localhost.com' );
     $user->setRoleNames(    $data['roles']                      );
     $user->setStatus(       User::STATUS_ENABLED                );
-    
+
     $result = $users->addUser($user);
     if ($result) {
         echo "[success] Add `{$data['account']}` success\n";

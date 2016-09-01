@@ -13,10 +13,10 @@
 
 ### Installation
 ```sh
-$ composer.phar self-update
-$ composer.phar install
-$ cp config.example.php config.php
-$ vi config.php
+composer.phar self-update
+composer.phar install
+cp config.example.php config.php
+vi config.php
 ```
 
 ### Install & update
@@ -26,5 +26,5 @@ php autorun.php
 
 ### Execute
 ```sh
-$ php public/index.php
+php public/index.php
 ```
