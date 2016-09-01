@@ -99,10 +99,10 @@ class BaseController
      */
     private function baseLoader()
     {
-        // 在 controler 之中可以使用登入者的資料 $authUser 
+        // 在 controler 之中可以使用登入者的資料 $authUser
         $this->authUser = UserManager::getUser();
 
-        // 在 template 之中可以使用登入者的資料 $authUser 
+        // 在 template 之中可以使用登入者的資料 $authUser
         $this->assignParam('authUser', $this->authUser);
     }
 
@@ -125,6 +125,32 @@ class BaseController
                     ->addArgument('%app.path%');                    // __construct
                     ->setProperty('setDb', [new Reference('db')]);  // ??
         */
+
+        /**
+         *  init session
+         */
+        $initSession = function($basePath)
+        {
+            $di = di();
+            $di->setParameter('app.path', $basePath);
+
+            // session
+            $di->register('session', 'Bridge\Session');
+            $isExpire = $di->get('session')->init([
+                'sessionPath' => conf('app.path') . '/var/session',
+            ]);
+
+            return $isExpire;
+        };
+        $isExpire = $initSession($basePath);
+
+        // session 過期, 重新導向
+        if ($isExpire) {
+            $redirectUrl = $_SERVER['REQUEST_URI'];
+            echo '<meta http-equiv="refresh" content="3; url='. $redirectUrl .'" />';
+            echo 'Already Expired ...';
+            exit;
+        }
 
         // view
         $viewConfig = [
@@ -195,7 +221,7 @@ class BaseController
             }
 
             $backtraces = debug_backtrace();
-            if (isset($backtraces[2], 
+            if (isset($backtraces[2],
                       $backtraces[2]['args'],
                       $backtraces[2]['args'][0])) {
                 $methodName = $backtraces[2]['args'][0];
