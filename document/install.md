@@ -1,0 +1,34 @@
+##執行程式最低需求
+    - php 5.6
+    - mysql
+    - composer
+
+##virtual host (參考)
+```sh
+    # 請盡可能使用 SSL
+    Alias /your-project /var/www/your-project/home
+    <Directory "/var/www/your-project/home">
+        Options FollowSymLinks
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+    </Directory>
+
+    # by ubuntu
+    vi /etc/apache2/sites-available/default-ssl.conf
+```
+
+##first install
+```sh
+    php autorun.php
+```
+
+##首次建立帳號
+```sh
+    vi  bin/user-create-account.php
+    php bin/user-create-account.php
+```
+
+##npm
+略
+
