@@ -11,6 +11,7 @@ namespace PackageVersions;
 final class Versions
 {
     const VERSIONS = array (
+  'asimlqt/php-google-spreadsheet-client' => '2.3.5@9cb74ee0670e3928d6b40dd53164c3f09c65e309',
   'container-interop/container-interop' => '1.1.0@fc08354828f8fd3245f77a66b9e23a6bca48297e',
   'doctrine/annotations' => 'v1.2.7@f25c8aab83e0c3e976fd7d19875f198ccf2f7535',
   'doctrine/cache' => 'v1.6.0@f8af318d14bdb0eff0336795b428b547bd39ccb6',
@@ -21,6 +22,7 @@ final class Versions
   'doctrine/lexer' => 'v1.0.1@83893c552fd2045dd78aef794c31e694c37c0b8c',
   'doctrine/migrations' => '1.4.1@0d0ff5da10c5d30846da32060bd9e357abf70a05',
   'filp/whoops' => '2.1.3@8828aaa2178e0a19325522e2a45282ff0a14649b',
+  'google/apiclient' => 'v1.1.8@85309a3520bb5f53368d43e35fd24f43c9556323',
   'nette/mail' => 'v2.2.5@515cd63fdd7786d7008418d8a6c3e0c610f5b5f5',
   'nette/utils' => 'v2.4.0@c455ade9f24a1f99aa81772516764045296b8ca0',
   'nikic/fast-route' => 'v1.0.1@8ea928195fa9b907f0d6e48312d323c1a13cc2af',
@@ -38,7 +40,7 @@ final class Versions
   'zendframework/zend-db' => '2.8.1@c9fa8fdab194093fff58e4f1180c7e15d80a2cb5',
   'zendframework/zend-eventmanager' => '3.0.1@5c80bdee0e952be112dcec0968bad770082c3a6e',
   'zendframework/zend-stdlib' => '3.0.1@8bafa58574204bdff03c275d1d618aaa601588ae',
-  '__root__' => '9999999-dev@7dffc00b55bd87c95079e651ee35669d41354a91',
+  '__root__' => '9999999-dev@276c6a24bf0c3fa4c74d036ee3c7c0a22d451000',
 );
 
     private function __construct()

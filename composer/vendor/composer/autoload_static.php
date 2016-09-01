@@ -9,6 +9,7 @@ class ComposerStaticInitf80000fb4c84d8915df669d2c1b2f720
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
+        'cf150f72bd303a2ff07711c9a70f2d53' => __DIR__ . '/..' . '/google/apiclient/src/Google/autoload.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -39,6 +40,10 @@ class ComposerStaticInitf80000fb4c84d8915df669d2c1b2f720
         'I' => 
         array (
             'Interop\\Container\\' => 18,
+        ),
+        'G' => 
+        array (
+            'Google\\' => 7,
         ),
         'F' => 
         array (
@@ -104,6 +109,10 @@ class ComposerStaticInitf80000fb4c84d8915df669d2c1b2f720
         'Interop\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container',
+        ),
+        'Google\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/asimlqt/php-google-spreadsheet-client/src/Google',
         ),
         'FastRoute\\' => 
         array (
