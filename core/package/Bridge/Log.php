@@ -41,7 +41,7 @@ class Log
     public static function record($content)
     {
         $content = date("Y-m-d H:i:s") . ' - '. $content;
-        self::write('system.log', $content );
+        self::save('system.log', $content );
     }
 
     /**
@@ -54,7 +54,7 @@ class Log
             $content .= ' .... (' . strlen($content) . ')';
         }
         $content = date("Y-m-d H:i:s") .' - '. $content;
-        self::write('debug-sql.log', $content);
+        self::save('debug-sql.log', $content);
     }
 
     /* --------------------------------------------------------------------------------
@@ -86,9 +86,9 @@ class Log
     -------------------------------------------------------------------------------- */
 
     /**
-     *  write file
+     *  write content to file
      */
-    public static function write($name, $content)
+    public static function save($name, $content)
     {
         if (!preg_match('/^[a-z0-9_\-\.]+$/i', $name)) {
             return;
