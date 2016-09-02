@@ -7,10 +7,10 @@
 - 建立 google sheet 並且共用給使用者 CLIENT_EMAIL
 
 ### Environment Request
-[x] PHP 5.6
-[x] composer (https://getcomposer.org/)
-[ ] npm
-[ ] gulp
+- [x] PHP 5.6
+- [x] composer (https://getcomposer.org/)
+- [ ] npm
+- [ ] gulp
 
 ### Installation
 ```sh
