@@ -192,7 +192,7 @@ class MenuManager
      */
     private static function _getMenuInfos()
     {
-        $menuFolder =  conf('app.path') . '/resource/menus';
+        $menuFolder =  getProjectPath('/resource/menus');
         $menus = glob($menuFolder . "/*.php");
 
         $infos = [];

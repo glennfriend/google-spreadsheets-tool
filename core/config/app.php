@@ -27,11 +27,6 @@ return [
     ],
 
     /**
-     *  app path
-     */
-    'path' => getProjectPath(),
-
-    /**
      *  timezone
      *
      *      +0 => UTC

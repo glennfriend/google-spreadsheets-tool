@@ -41,14 +41,17 @@ function conf($key)
 
 /**
  *  取得專案路徑
- *  NOTE: 如果該程式移位, 請注意程式路徑可能要做變更
+ *      - 如果該程式移位, 請注意程式路徑可能要做變更
+ *      - 不要自動修正 $url 前方有沒有 / 符號, 只要不符合規定就是錯誤
+ *      - 不需要檢查路徑是否正確, 它不在該函式的範圍
  */
-function getProjectPath($url=null)
+function getProjectPath($url='')
 {
-    if ($url) {
-        return dirname(__DIR__) . '/' .ltrim($url, '/');
+    if ($url && '/' !== mb_substr($url, 0, 1)) {
+        throw new \Exception('Error: path not exact!');
     }
-    return dirname(__DIR__);
+
+    return dirname(__DIR__) . $url;
 }
 
 // --------------------------------------------------------------------------------
@@ -99,7 +102,7 @@ function cc()
     $args    = func_get_args();
     $func    = $args[0];
 
-    $functionFile = conf('app.path') . '/resource/ccHelper/' . $func . '.php';
+    $functionFile = getProjectPath('/resource/ccHelper/' . $func . '.php');
     if (!file_exists($functionFile)) {
         throw new Exception('Error: cc helper "'. $func .'" function not fount!');
     }
@@ -138,7 +141,7 @@ function out($data)
     else {
         $data .= "\n";
     }
-    file_put_contents( conf('app.path') . '/var/out.log', $data, FILE_APPEND);
+    file_put_contents( getProjectPath('/var/out.log'), $data, FILE_APPEND);
 }
 
 /**

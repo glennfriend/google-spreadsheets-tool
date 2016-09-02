@@ -108,7 +108,7 @@ class BaseController
      */
     private function baseDiLoader()
     {
-        $basePath = conf('app.path');
+        $basePath = getProjectPath();
         $di = di();
         $di->setParameter('app.path', $basePath);
 
@@ -131,7 +131,7 @@ class BaseController
             // session
             $di->register('session', 'Bridge\Session');
             $isExpire = $di->get('session')->init([
-                'sessionPath' => conf('app.path') . '/var/session',
+                'sessionPath' => getProjectPath('/var/session'),
             ]);
 
             return $isExpire;
@@ -148,7 +148,7 @@ class BaseController
 
         // view
         $viewConfig = [
-            'view_path' => conf('app.path') . '/resource/views'
+            'view_path' => getProjectPath('/resource/views')
         ];
         $di->register('view', 'Bridge\View')
            ->addMethodCall('init', [$viewConfig]);
@@ -159,7 +159,7 @@ class BaseController
         // home url manager
         $di->register('homeUrl', 'App\Utility\Url\HomeUrlManager');
         $di->get('homeUrl')->init([
-            'basePath'  =>  conf('app.path'),
+            'basePath'  =>  getProjectPath(),
             'baseUrl'   =>  conf('home.base.url'),
             'host'      =>  isCli() ? '' :  $_SERVER['HTTP_HOST'],
         ]);
@@ -167,7 +167,7 @@ class BaseController
         // admin url manager
         $di->register('AdminUrl', 'App\Utility\Url\AdminUrlManager');
         $di->get('AdminUrl')->init([
-            'basePath'  =>  conf('app.path'),
+            'basePath'  =>  getProjectPath(),
             'baseUrl'   =>  conf('admin.base.url'),
             'host'      =>  isCli() ? '' :  $_SERVER['HTTP_HOST'],
         ]);

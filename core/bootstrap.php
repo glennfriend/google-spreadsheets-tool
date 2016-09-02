@@ -47,7 +47,7 @@ $initialize = function()
        exit;
     }
 
-    if (conf('app.path') !== $basePath) {
+    if (getProjectPath() !== $basePath) {
        show('base path setting error!');
        exit;
     }
