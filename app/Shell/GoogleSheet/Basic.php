@@ -11,7 +11,9 @@ class Basic extends BaseController
 {
 
     /**
-     *
+     * 用來測試以下部份
+     *      - 與 google 認証是否正確
+     *      - 第一組 "web1" 的設定是否可以取得到 google spreadsheets
      */
     protected function TestOnly()
     {
@@ -21,9 +23,8 @@ class Basic extends BaseController
         $sheetManager = Service::factorySheetManagerByKey($configKey);
         $googleWorkSheet = $sheetManager->getOriginWorksheet();
 
-        $header = $sheetManager->getHeader();
+        // $header = $sheetManager->getHeader();
         $count = $sheetManager->getCount();
-        $rows = [];
         for ($i=0; $i<$count; $i++) {
 
             if (($i+1) > $showTotalCount) {

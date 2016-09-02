@@ -4,7 +4,7 @@ namespace App\Business\GoogleSheet;
 /**
  * 管理 google worksheet
  *
- *  Example:
+ * Example:
  *
  *      name,age,like
  *      kevin,15,eat
@@ -12,9 +12,9 @@ namespace App\Business\GoogleSheet;
  *      old man,85,mountain
  *      Chris,45,game
  *
- *      $sheet = new GoogleWorksheetManager($googleWorksheet);
+ *      $sheet = new SheetManager($googleWorksheet);
  *      $count = $sheet->getCount();
- *      for ( $i=0; $i<$count; $i++ ) {
+ *      for ($i=0; $i<$count; $i++) {
  *          $row = $sheet->getRow($i);
  *          $row['age']++;
  *          $sheet->setRow($i, $row);
@@ -55,17 +55,20 @@ class SheetManager
     // --------------------------------------------------------------------------------
 
     /**
-     *  @return array
+     * google sheet 在取 header 後, 會過濾名稱
+     * 只留下 "a-z" "0-9" "-" 這些文字符號
+     *
+     * @return array
      */
     public function getHeader()
     {
         $row = $this->getRow(0);
-        if ( !$row ) {
+        if (!$row) {
             return array();
         }
 
         $result = array();
-        foreach ( $row as $title => $value ) {
+        foreach ($row as $title => $value) {
             $result[] = $title;
         }
 
@@ -73,7 +76,9 @@ class SheetManager
     }
 
     /**
-     *  @return array or false
+     * 取得的 header 部份會被過濾
+     *
+     * @return array or false
      */
     public function getRow($index)
     {
@@ -89,7 +94,7 @@ class SheetManager
     public function setRow($index, $row)
     {
         $oldRow = $this->getRow($index);
-        if ( !$oldRow ) {
+        if (!$oldRow) {
             return false;
         }
 

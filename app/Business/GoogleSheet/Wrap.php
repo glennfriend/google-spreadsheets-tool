@@ -45,7 +45,6 @@ class Wrap
 
         $spreadsheetService = new \Google\Spreadsheet\SpreadsheetService();
         $spreadsheetFeed = $spreadsheetService->getSpreadsheets();
-
         $spreadsheet = $spreadsheetFeed->getByTitle($book);
         if (!$spreadsheet) {
             return false;
