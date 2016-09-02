@@ -13,9 +13,8 @@ class Service
      */
     public static function factorySheetManagerByKey($configKey)
     {
-
         $config = conf('google.web1');
-        $keyFilePath = getProjectPath($config['key_file']);
+        $keyFilePath = getProjectPath('/' . $config['key_file']);
         $clientEmail = $config['client_email'];
         $book   = $config['sheet_1']['book'];
         $sheet  = $config['sheet_1']['sheet'];
