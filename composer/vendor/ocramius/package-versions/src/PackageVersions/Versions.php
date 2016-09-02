@@ -35,12 +35,13 @@ final class Versions
   'symfony/console' => 'v3.0.9@926061e74229e935d3c5b4e9ba87237316c6693f',
   'symfony/dependency-injection' => 'v3.1.3@6abd4952d07042d11bbb8122f3b57469691acdb5',
   'symfony/polyfill-mbstring' => 'v1.2.0@dff51f72b0706335131b00a7f49606168c582594',
+  'symfony/var-dumper' => 'v3.1.3@076235b750137518408f1bc17a8e69b43211836a',
   'symfony/yaml' => 'v3.1.3@1819adf2066880c7967df7180f4f662b6f0567ac',
   'zendframework/zend-code' => '3.0.4@c5272131d3acb0f470a2462ed088fca3b6ba61c2',
   'zendframework/zend-db' => '2.8.1@c9fa8fdab194093fff58e4f1180c7e15d80a2cb5',
   'zendframework/zend-eventmanager' => '3.0.1@5c80bdee0e952be112dcec0968bad770082c3a6e',
   'zendframework/zend-stdlib' => '3.0.1@8bafa58574204bdff03c275d1d618aaa601588ae',
-  '__root__' => '9999999-dev@276c6a24bf0c3fa4c74d036ee3c7c0a22d451000',
+  '__root__' => '9999999-dev@0ddbe02eb0c7938b130483eb1c9da01c5df82a30',
 );
 
     private function __construct()

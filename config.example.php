@@ -19,7 +19,6 @@ return [
             'sheet_1'  => [
                 'book'   => 'Book1',
                 'sheet'  => 'Sheet1',
-                'urlKey' => '',
             ]
         ]
     ],

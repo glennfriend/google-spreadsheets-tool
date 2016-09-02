@@ -12,7 +12,7 @@ class Wrap
     /**
      *  @return token or false
      */
-    public static function getToken($keyFilePath, $clientEmail)
+    public static function getToken($keyFilePath, $clientEmail, $assertionCredentials)
     {
         $key = file_get_contents($keyFilePath);
         $cred = new \Google_Auth_AssertionCredentials(

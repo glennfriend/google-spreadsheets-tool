@@ -24,6 +24,16 @@ namespace App\Business\GoogleSheet;
 class SheetManager
 {
     /**
+     * Google\Spreadsheet\Worksheet
+     */
+    protected $worksheet;
+
+    /**
+     *
+     */
+    protected $entries;
+
+    /**
      *
      */
     public function __construct(\Google\Spreadsheet\Worksheet $worksheet)
@@ -31,6 +41,18 @@ class SheetManager
         $this->worksheet = $worksheet;
         $this->entries = $worksheet->getListFeed()->getEntries();
     }
+
+    // --------------------------------------------------------------------------------
+    //
+    // --------------------------------------------------------------------------------
+    public function getOriginWorksheet()
+    {
+        return $this->worksheet;
+    }
+
+    // --------------------------------------------------------------------------------
+    //
+    // --------------------------------------------------------------------------------
 
     /**
      *  @return array
