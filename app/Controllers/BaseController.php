@@ -25,21 +25,15 @@ class BaseController
      */
     public function __call($method, $controllerArgs)
     {
-        global $app;    // Slim app
-        global $argv;   // by command line
+        global $app; // Slim app
 
         if (!method_exists($this, $method)) {
             throw new \Exception("API method '{$method}' is not exist!");
             exit;
         }
 
-        if (isCli()) {
-            CliManager::init($argv);
-        }
-        else {
-            SlimManager::init($app, $controllerArgs);
-            Input::init($controllerArgs);
-        }
+        SlimManager::init($app, $controllerArgs);
+        Input::init($controllerArgs);
 
         // 如果有回傳值, 則不往下執行
         $result = $this->initBefore();

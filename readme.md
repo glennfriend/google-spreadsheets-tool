@@ -12,9 +12,9 @@
 
 ### Installation
 ```sh
-composer.phar self-update
-composer.phar install
-cp config.example.php config.php
+composer self-update
+composer install
+cp example.config.php config.php
 vi config.php
 ```
 

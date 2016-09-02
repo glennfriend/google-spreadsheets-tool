@@ -2,7 +2,7 @@
 $basePath = dirname(dirname(__DIR__));
 require_once $basePath . '/core/bootstrap.php';
 
-/*
+
 $app = ProjectHelper::buildApp();
 
 // public
@@ -13,4 +13,4 @@ $app->get ('/logout',   'App\Controllers\PublicPage\Auth:logout');
 
 $app->get ('/404',      'App\Controllers\PublicPage\Status:show404');
 $app->run();
-*/
+
