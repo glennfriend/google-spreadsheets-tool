@@ -30,7 +30,6 @@ final class Versions
   'ocramius/proxy-manager' => '2.0.3@51c7fdd99dba53808aaab21b34f7a55b302c160c',
   'pimple/pimple' => 'v3.0.2@a30f7d6e57565a2e1a316e1baf2a483f788b258a',
   'psr/http-message' => '1.0.1@f6561bf28d520154e4b0ec72be95418abe6d9363',
-  'pwfisher/command-line-php' => 'dev-master@ce756a94efa3544b56d03a02d3634a8d969ee962',
   'slim/slim' => '3.5.0@184352bc1913d7ba552ab4131d62f4730ddb0893',
   'symfony/console' => 'v3.0.9@926061e74229e935d3c5b4e9ba87237316c6693f',
   'symfony/dependency-injection' => 'v3.1.3@6abd4952d07042d11bbb8122f3b57469691acdb5',
@@ -41,7 +40,7 @@ final class Versions
   'zendframework/zend-db' => '2.8.1@c9fa8fdab194093fff58e4f1180c7e15d80a2cb5',
   'zendframework/zend-eventmanager' => '3.0.1@5c80bdee0e952be112dcec0968bad770082c3a6e',
   'zendframework/zend-stdlib' => '3.0.1@8bafa58574204bdff03c275d1d618aaa601588ae',
-  '__root__' => '9999999-dev@0ddbe02eb0c7938b130483eb1c9da01c5df82a30',
+  '__root__' => '9999999-dev@c8f3e1971faa752025b6e81177e2491d40284c49',
 );
 
     private function __construct()

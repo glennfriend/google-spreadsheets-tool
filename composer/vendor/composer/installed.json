@@ -49,49 +49,6 @@
         "description": "Composer plugin that provides efficient querying for installed package versions (no runtime IO)"
     },
     {
-        "name": "pwfisher/command-line-php",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/pwfisher/CommandLine.php.git",
-            "reference": "ce756a94efa3544b56d03a02d3634a8d969ee962"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/pwfisher/CommandLine.php/zipball/ce756a94efa3544b56d03a02d3634a8d969ee962",
-            "reference": "ce756a94efa3544b56d03a02d3634a8d969ee962",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0"
-        },
-        "time": "2014-09-23 01:07:11",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "classmap": [
-                "CommandLine.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "CC-BY-3.0"
-        ],
-        "authors": [
-            {
-                "name": "Patrick Fisher",
-                "email": "patrick@pwfisher.com"
-            }
-        ],
-        "description": "PHP Command Line interface class. Provides friendly and flexible CLI argument parsing.",
-        "keywords": [
-            "cli",
-            "parser",
-            "parsing"
-        ]
-    },
-    {
         "name": "zendframework/zend-stdlib",
         "version": "3.0.1",
         "version_normalized": "3.0.1.0",

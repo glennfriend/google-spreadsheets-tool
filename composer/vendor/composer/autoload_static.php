@@ -177,7 +177,6 @@ class ComposerStaticInitf80000fb4c84d8915df669d2c1b2f720
 
     public static $classMap = array (
         'BaseObject' => __DIR__ . '/../..' . '/../core/library/BaseObject.php',
-        'CommandLine' => __DIR__ . '/..' . '/pwfisher/command-line-php/CommandLine.php',
         'DaoHelper' => __DIR__ . '/../..' . '/../core/library/DaoHelper.php',
         'Nette\\ArgumentOutOfRangeException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
         'Nette\\DeprecatedException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',

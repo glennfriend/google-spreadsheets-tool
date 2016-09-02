@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d8050fda6afdb43761be3c4c7d7710bf",
-    "content-hash": "9845898ac4ced29fb6f8dfb9666b5f48",
+    "hash": "2cf96eec37eb679c3e93557c613d7469",
+    "content-hash": "d2e355c29b1a62a1b71d7b1238a8e5e6",
     "packages": [
         {
             "name": "asimlqt/php-google-spreadsheet-client",
@@ -1096,47 +1096,6 @@
             "time": "2016-08-06 14:39:51"
         },
         {
-            "name": "pwfisher/command-line-php",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/pwfisher/CommandLine.php.git",
-                "reference": "ce756a94efa3544b56d03a02d3634a8d969ee962"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pwfisher/CommandLine.php/zipball/ce756a94efa3544b56d03a02d3634a8d969ee962",
-                "reference": "ce756a94efa3544b56d03a02d3634a8d969ee962",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "CommandLine.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "CC-BY-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Patrick Fisher",
-                    "email": "patrick@pwfisher.com"
-                }
-            ],
-            "description": "PHP Command Line interface class. Provides friendly and flexible CLI argument parsing.",
-            "keywords": [
-                "cli",
-                "parser",
-                "parsing"
-            ],
-            "time": "2014-09-23 01:07:11"
-        },
-        {
             "name": "slim/slim",
             "version": "3.5.0",
             "source": {
@@ -1710,9 +1669,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "pwfisher/command-line-php": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

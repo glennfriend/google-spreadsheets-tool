@@ -1,5 +1,6 @@
 <?php
 namespace App\Utility\Console;
+use App\Library\Pwfisher\CommandLine;
 
 class CliManager
 {
@@ -16,7 +17,7 @@ class CliManager
     public static function init($arguments)
     {
         if ($arguments) {
-            self::$args = \CommandLine::parseArgs($arguments);
+            self::$args = CommandLine::parseArgs($arguments);
         }
     }
 

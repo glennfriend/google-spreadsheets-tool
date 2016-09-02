@@ -7,7 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'BaseObject' => $baseDir . '/../core/library/BaseObject.php',
-    'CommandLine' => $vendorDir . '/pwfisher/command-line-php/CommandLine.php',
     'DaoHelper' => $baseDir . '/../core/library/DaoHelper.php',
     'Nette\\ArgumentOutOfRangeException' => $vendorDir . '/nette/utils/src/Utils/exceptions.php',
     'Nette\\DeprecatedException' => $vendorDir . '/nette/utils/src/Utils/exceptions.php',
