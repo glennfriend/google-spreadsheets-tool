@@ -6,9 +6,11 @@
     - p12 key
 - 建立 google sheet 並且共用給使用者 CLIENT_EMAIL
 
-### Environment
-- PHP 5.5
-- composer (https://getcomposer.org/)
+### Environment Request
+[x] PHP 5.6
+[x] composer (https://getcomposer.org/)
+[ ] npm
+[ ] gulp
 
 ### Installation
 ```sh
