@@ -1,13 +1,13 @@
 <?php
 namespace App\Shell\GoogleSheet;
-use App\Shell\BaseController;
+use App\Shell\MainController;
 use App\Business\GoogleSheet\Tool;
 use App\Business\GoogleSheet\Service;
 
 /**
  *
  */
-class Download extends BaseController
+class Download extends MainController
 {
 
     /**
