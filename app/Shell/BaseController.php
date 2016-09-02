@@ -21,8 +21,7 @@ class BaseController
      */
     public function __call($method, $controllerArgs)
     {
-        global $app;    // Slim app
-        global $argv;   // by command line
+        global $argv; // by command line
 
         if (!method_exists($this, $method)) {
             throw new \Exception("API method '{$method}' is not exist!");
@@ -30,7 +29,6 @@ class BaseController
         }
 
         CliManager::init($argv);
-
 
         // 如果有回傳值, 則不往下執行
         $result = $this->initBefore();
@@ -74,9 +72,11 @@ class BaseController
      */
     private function baseDiLoader()
     {
+        /*
         $basePath = conf('app.path');
         $di = di();
         $di->setParameter('app.path', $basePath);
+        */
 
         /*
             Example:

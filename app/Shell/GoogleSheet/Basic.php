@@ -1,13 +1,13 @@
 <?php
 namespace App\Shell\GoogleSheet;
-use App\Shell\BaseController;
+use App\Shell\MainController;
 use App\Business\GoogleSheet\Tool;
 use App\Business\GoogleSheet\Service;
 
 /**
  *
  */
-class Basic extends BaseController
+class Basic extends MainController
 {
 
     /**
@@ -17,7 +17,7 @@ class Basic extends BaseController
      */
     protected function TestOnly()
     {
-        $showTotalCount = 3;
+        $showTotalCount = 2;
         $configKey = 'web1';
 
         $sheetManager = Service::factorySheetManagerByKey($configKey);

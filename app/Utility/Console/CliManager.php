@@ -11,8 +11,6 @@ class CliManager
 
     /**
      *  init
-     *
-     *  @see https://github.com/pwfisher/CommandLine.php
      */
     public static function init($arguments)
     {
