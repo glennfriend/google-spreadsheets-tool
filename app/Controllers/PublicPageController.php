@@ -13,7 +13,7 @@ class PublicPageController extends BaseController
     protected function initBefore()
     {
         $this->diLoader();
-        include 'publicHelper.php';
+        include 'publicPageHelper.php';
 
         di('view')->setLayout('_global.layout.public');
     }
