@@ -6,8 +6,6 @@ namespace App\Model;
  */
 class UserLogs extends \ZendModel
 {
-    const CACHE_USER_LOG = 'cache_user_log';
-
     /**
      *  table name
      */
@@ -57,19 +55,7 @@ class UserLogs extends \ZendModel
             return false;
         }
 
-        $this->preChangeHook($object);
-        return $insertId;
-    }
-
-    /**
-     *  pre change hook, first remove cache, second do something more
-     *  about add, update, delete
-     *  @param object
-     */
-    public function preChangeHook($object)
-    {
-        // first, remove cache
-        $this->removeCache($object);
+        return $object;
     }
 
     /**
@@ -82,7 +68,7 @@ class UserLogs extends \ZendModel
             return;
         }
 
-        $cacheKey = $this->getFullCacheKey( $object->getId(), UserLogs::CACHE_USER_LOG );
+        $cacheKey = $this->getFullCacheKey( $object->getId(), 'id');
         self::getCache()->remove($cacheKey);
     }
 
@@ -98,7 +84,7 @@ class UserLogs extends \ZendModel
      */
     public function getUserLog($id)
     {
-        $object = $this->getObject( 'id', $id, UserLogs::CACHE_USER_LOG );
+        $object = $this->getObject('id', $id);
         if ( !$object ) {
             return false;
         }

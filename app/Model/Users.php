@@ -89,12 +89,11 @@ class Users extends \ZendModel2
      */
     protected function removeCache($object)
     {
-        if ( $object->getId() <= 0 ) {
+        if ($object->getId() <= 0) {
             return;
         }
         $cacheKey = $this->getFullCacheKey($object->getId(), 'id');
-        CacheBrg::remove($cacheKey);
-        //self::getCache()->remove($cacheKey);
+        self::getCache()->remove($cacheKey);
     }
 
     /* ================================================================================
