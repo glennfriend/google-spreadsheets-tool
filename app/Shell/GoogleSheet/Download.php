@@ -16,7 +16,7 @@ class Download extends MainController
     protected function downloadWeb1()
     {
         $configKey = 'web1';
-        $saveFile = 'download_web1.json';
+        $saveFile = getProjectPath('/var/download_web1.json');
 
         $sheetManager = Service::factorySheetManagerByKey($configKey);
         $googleWorkSheet = $sheetManager->getOriginWorksheet();
@@ -32,7 +32,10 @@ class Download extends MainController
         }
 
         $json = json_encode($rows, JSON_PRETTY_PRINT);
-        $saveFile = getProjectPath('/var/' . $saveFile);
+        if (!$json) {
+            echo "Error: Program break!\n";
+            exit;
+        }
         $saveBytes = file_put_contents($saveFile, $json);
         $size = number_format($saveBytes / 1024, 2);
 
