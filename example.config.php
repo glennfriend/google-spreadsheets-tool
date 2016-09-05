@@ -12,6 +12,14 @@ return [
             'name' => 'Google Spreadsheets Tool',
         ],
     ],
+    'db' => [
+        'mysql' => [
+            'host' => '',
+            'user' => '',
+            'pass' => '',
+            'db'   => '',
+        ],
+    ],
     'google' => [
         'web1' => [
             'key_file'      => 'var/web1.p12',

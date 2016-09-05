@@ -18,6 +18,10 @@ perform([
         'title' => 'Composer Install (use composer.lock)',
         'cmd'   => "cd composer; composer install",
     ],
+    [
+        'title' => 'migrate',
+        'cmd'   => "php migration migrations:migrate --no-interaction",
+    ],
 ]);
 
 /**
