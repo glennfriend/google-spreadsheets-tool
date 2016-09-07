@@ -8,12 +8,13 @@ use App\Business\GoogleSheet\SheetManager;
  */
 class Service
 {
+
     /**
      * 依照設定檔的一組 key, 來決定取得的 $sheetManager
      */
     public static function factorySheetManagerByKey($configKey)
     {
-        $config = conf('google.web1');
+        $config = conf('google.'. $configKey);
         $keyFilePath = getProjectPath('/' . $config['key_file']);
         $clientEmail = $config['client_email'];
         $book   = $config['sheet_1']['book'];
