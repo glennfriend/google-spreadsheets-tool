@@ -52,6 +52,7 @@ class Config
         if (is_array($configs) && !empty($configs)) {
             self::$cf = self::array_merge_recursive_distinct(self::$cf, $configs);
         }
+
         return null;
     }
 
@@ -118,10 +119,10 @@ class Config
      *  @author Daniel <daniel (at) danielsmedegaardbuus (dot) dk>
      *  @author Gabriel Sobrinho <gabriel (dot) sobrinho (at) gmail (dot) com>
      */
-    private static function array_merge_recursive_distinct(array &$array1, array &$array2)
+    private static function array_merge_recursive_distinct(array $array1, array $array2)
     {
         $merged = $array1;
-        foreach ($array2 as $key => &$value)
+        foreach ($array2 as $key => $value)
         {
             if (is_array($value) && isset($merged[$key]) && is_array($merged[$key]))
             {
