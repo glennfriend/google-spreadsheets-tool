@@ -1,0 +1,22 @@
+<phpunit bootstrap="./autoload.php"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         stopOnFailure="false"
+         syntaxCheck="true"
+         verbose="true"
+         colors="false">
+
+    <testsuites>
+        <testsuite name="project">
+            <directory>./project/</directory>
+        </testsuite>
+        <testsuite name="environment">
+            <directory>./environment/</directory>
+        </testsuite>
+        <testsuite name="php-document">
+            <directory>./php-document/</directory>
+        </testsuite>
+    </testsuites>
+
+</phpunit>

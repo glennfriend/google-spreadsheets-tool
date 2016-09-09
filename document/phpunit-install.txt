@@ -1,0 +1,31 @@
+
+install
+
+    https://phpunit.de/getting-started.html
+
+install
+
+    wget https://phar.phpunit.de/phpunit.phar
+    chmod +x phpunit.phar
+    sudo mv phpunit.phar /usr/local/bin/phpunit
+
+try
+
+    phpunit --version
+    cd resource/test
+    phpunit
+
+phpunit example
+
+    assertTrue(true);                                               # SUCCESSFUL
+    assertEquals('orz', 'oxz', 'The string is not equal with orz'); #   UNSUCCESSFUL
+    assertCount(1, array('Monday'));                                # SUCCESSFUL
+    assertContains('PHP', array('PHP', 'Java', 'Ruby'));            # SUCCESSFUL
+
+    assertTrue()：判斷實際值是否為 true。
+    assertEquals()：預期值是 orz，實際值是 oxz，因為兩個值不相等，所以這一個斷言失敗，會顯示 The string is not equal with orz 的字串。
+    assertCount()：預期陣列大小為 1。
+    assertContains()：預期陣列內有一個 PHP 字串的元素存在。
+
+    從上面的後三個 assertions 可以發現，預期值都是在第一個參數，而後面則是實際值。
+

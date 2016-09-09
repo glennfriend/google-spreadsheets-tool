@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="./autoload.php"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         stopOnFailure="false"
+         syntaxCheck="true"
+         verbose="true"
+         colors="false">
+
+    <testsuites>
+        <testsuite name="project">
+            <directory>./project/</directory>
+        </testsuite>
+        <testsuite name="environment">
+            <directory>./environment/</directory>
+        </testsuite>
+        <testsuite name="php-document">
+            <directory>./php-document/</directory>
+        </testsuite>
+    </testsuites>
+
+    <!-- about report & coverage -->
+    <logging>
+        <log type="coverage-html" target="_build/coverage" highlight="true" />
+        <log type="testdox-html"  target="_build/list.html" />
+    </logging>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">../../app/</directory>
+        </whitelist>
+    </filter>
+
+</phpunit>

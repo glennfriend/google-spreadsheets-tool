@@ -22,6 +22,10 @@ perform([
         'title' => 'migrate',
         'cmd'   => "php migration migrations:migrate --no-interaction",
     ],
+    [
+        'title' => 'unit test',
+        'cmd'   => "cd resource/test; phpunit",
+    ],
 ]);
 
 /**

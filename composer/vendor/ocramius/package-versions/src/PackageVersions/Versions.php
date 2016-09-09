@@ -40,7 +40,7 @@ final class Versions
   'zendframework/zend-db' => '2.8.1@c9fa8fdab194093fff58e4f1180c7e15d80a2cb5',
   'zendframework/zend-eventmanager' => '3.0.1@5c80bdee0e952be112dcec0968bad770082c3a6e',
   'zendframework/zend-stdlib' => '3.0.1@8bafa58574204bdff03c275d1d618aaa601588ae',
-  '__root__' => '9999999-dev@da32d26613fa70389891752cc9a12fae7d51ac5a',
+  '__root__' => '9999999-dev@6d91a1b394291aaf25ddcc0f5a468782fcf93ed8',
 );
 
     private function __construct()

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/glenn/google-spreadsheets-tool/app/Model</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/nv.d3.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="../js/html5shiv.min.js"></script>
+  <script src="../js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../index.html">/var/www/glenn/google-spreadsheets-tool/app</a></li>
+        <li><a href="index.html">Model</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Filter/dateval.php.html#7">dateval</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Filter/floatval.php.html#7">floatval</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Filter/strtolower.php.html#7">strtolower</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserLog.php.html#22">UserLog</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserLogHelper.php.html#10">UserLogHelper</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserLogs.php.html#7">UserLogs</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Users.php.html#7">Users</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#10">User</a></td><td class="text-right">19%</td></tr>
+       <tr><td><a href="Filter/arrayval.php.html#8">arrayval</a></td><td class="text-right">66%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Users.php.html#7">Users</a></td><td class="text-right">992</td></tr>
+       <tr><td><a href="User.php.html#10">User</a></td><td class="text-right">497</td></tr>
+       <tr><td><a href="UserLogs.php.html#7">UserLogs</a></td><td class="text-right">342</td></tr>
+       <tr><td><a href="UserLog.php.html#22">UserLog</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="UserLogHelper.php.html#10">UserLogHelper</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Filter/dateval.php.html#7">dateval</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Filter/arrayval.php.html#8">arrayval</a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Users.php.html#258"><abbr title="Users::findUsersReal">findUsersReal</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Users.php.html#45"><abbr title="Users::addUser">addUser</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserLogs.php.html#24"><abbr title="UserLogs::mapRow">mapRow</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserLogs.php.html#46"><abbr title="UserLogs::addUserLog">addUserLog</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserLogs.php.html#65"><abbr title="UserLogs::removeCache">removeCache</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserLogs.php.html#85"><abbr title="UserLogs::getUserLog">getUserLog</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserLogs.php.html#104"><abbr title="UserLogs::findUserLogs">findUserLogs</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserLogs.php.html#118"><abbr title="UserLogs::numFindUserLogs">numFindUserLogs</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserLogs.php.html#131"><abbr title="UserLogs::findUserLogsReal">findUserLogsReal</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Users.php.html#23"><abbr title="Users::mapRow">mapRow</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Users.php.html#66"><abbr title="Users::updateUser">updateUser</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserLogHelper.php.html#48"><abbr title="UserLogHelper::addChangePassword">addChangePassword</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Users.php.html#80"><abbr title="Users::disableUser">disableUser</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Users.php.html#90"><abbr title="Users::removeCache">removeCache</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Users.php.html#108"><abbr title="Users::getUserByAuthenticate">getUserByAuthenticate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Users.php.html#140"><abbr title="Users::getUser">getUser</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Users.php.html#153"><abbr title="Users::getUserByAccount">getUserByAccount</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Users.php.html#177"><abbr title="Users::getRoleInfo">getRoleInfo</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Users.php.html#217"><abbr title="Users::findUsers">findUsers</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Users.php.html#233"><abbr title="Users::numFindUsers">numFindUsers</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserLogHelper.php.html#57"><abbr title="UserLogHelper::save">save</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserLogHelper.php.html#40"><abbr title="UserLogHelper::addLogout">addLogout</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Filter/dateval.php.html#9"><abbr title="dateval::filter">filter</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#178"><abbr title="User::getUpdateTimeByFormat">getUpdateTimeByFormat</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Filter/floatval.php.html#9"><abbr title="floatval::filter">filter</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Filter/strtolower.php.html#9"><abbr title="strtolower::filter">filter</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#76"><abbr title="User::getDisabledMethods">getDisabledMethods</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#86"><abbr title="User::validate">validate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#123"><abbr title="User::filter">filter</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#136"><abbr title="User::setPurePassword">setPurePassword</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#168"><abbr title="User::getCreateTimeByFormat">getCreateTimeByFormat</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#190"><abbr title="User::getUsername">getUsername</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserLogHelper.php.html#24"><abbr title="UserLogHelper::addLoginFail">addLoginFail</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#204"><abbr title="User::setUsername">setUsername</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#214"><abbr title="User::getRoleDescriptions">getRoleDescriptions</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#231"><abbr title="User::hasPermission">hasPermission</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserLog.php.html#29"><abbr title="UserLog::getTableDefinition">getTableDefinition</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserLog.php.html#68"><abbr title="UserLog::validate">validate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserLog.php.html#81"><abbr title="UserLog::getDisabledMethods">getDisabledMethods</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserLog.php.html#102"><abbr title="UserLog::getUser">getUser</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UserLogHelper.php.html#16"><abbr title="UserLogHelper::addLogin">addLogin</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User.php.html#144"><abbr title="User::validatePassword">validatePassword</a></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="Filter/arrayval.php.html#10"><abbr title="arrayval::filter">filter</a></a></td><td class="text-right">66%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="UserLogs.php.html#131"><abbr title="UserLogs::findUserLogsReal">findUserLogsReal</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="User.php.html#86"><abbr title="User::validate">validate</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="User.php.html#231"><abbr title="User::hasPermission">hasPermission</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Users.php.html#258"><abbr title="Users::findUsersReal">findUsersReal</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Users.php.html#177"><abbr title="Users::getRoleInfo">getRoleInfo</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="UserLog.php.html#102"><abbr title="UserLog::getUser">getUser</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Users.php.html#108"><abbr title="Users::getUserByAuthenticate">getUserByAuthenticate</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Users.php.html#45"><abbr title="Users::addUser">addUser</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Users.php.html#153"><abbr title="Users::getUserByAccount">getUserByAccount</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="UserLogHelper.php.html#57"><abbr title="UserLogHelper::save">save</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="UserLogs.php.html#46"><abbr title="UserLogs::addUserLog">addUserLog</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Users.php.html#140"><abbr title="Users::getUser">getUser</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Users.php.html#90"><abbr title="Users::removeCache">removeCache</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Users.php.html#66"><abbr title="Users::updateUser">updateUser</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="UserLogs.php.html#65"><abbr title="UserLogs::removeCache">removeCache</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="UserLogs.php.html#85"><abbr title="UserLogs::getUserLog">getUserLog</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Filter/dateval.php.html#9"><abbr title="dateval::filter">filter</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="UserLogHelper.php.html#24"><abbr title="UserLogHelper::addLoginFail">addLoginFail</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="User.php.html#214"><abbr title="User::getRoleDescriptions">getRoleDescriptions</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="User.php.html#190"><abbr title="User::getUsername">getUsername</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="User.php.html#144"><abbr title="User::validatePassword">validatePassword</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Filter/arrayval.php.html#10"><abbr title="arrayval::filter">filter</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 2.1.5</a> using <a href="http://php.net/" target="_top">PHP 7.0.8</a> and <a href="http://phpunit.de/">PHPUnit 4.7.3</a> at Thu Sep 8 21:24:45 PDT 2016.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../js/jquery.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/holder.min.js" type="text/javascript"></script>
+  <script src="../js/d3.min.js" type="text/javascript"></script>
+  <script src="../js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([7,0,1,0,0,0,0,1,0,0,0,3], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([41,0,0,0,0,0,0,2,0,0,0,6], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.scatter.onlyCircles(false);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[66.666666666667,2,"<a href=\"Filter\/arrayval.php.html#8\">arrayval<\/a>"],[0,2,"<a href=\"Filter\/dateval.php.html#7\">dateval<\/a>"],[0,1,"<a href=\"Filter\/floatval.php.html#7\">floatval<\/a>"],[100,1,"<a href=\"Filter\/intval.php.html#7\">intval<\/a>"],[100,1,"<a href=\"Filter\/strip_tags.php.html#7\">strip_tags<\/a>"],[0,1,"<a href=\"Filter\/strtolower.php.html#7\">strtolower<\/a>"],[100,1,"<a href=\"Filter\/trim.php.html#7\">trim<\/a>"],[19.642857142857,30,"<a href=\"User.php.html#10\">User<\/a>"],[0,8,"<a href=\"UserLog.php.html#22\">UserLog<\/a>"],[0,8,"<a href=\"UserLogHelper.php.html#10\">UserLogHelper<\/a>"],[0,18,"<a href=\"UserLogs.php.html#7\">UserLogs<\/a>"],[0,31,"<a href=\"Users.php.html#7\">Users<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.scatter.onlyCircles(false);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[66.666666666667,2,"<a href=\"Filter\/arrayval.php.html#10\">arrayval::filter<\/a>"],[0,2,"<a href=\"Filter\/dateval.php.html#9\">dateval::filter<\/a>"],[0,1,"<a href=\"Filter\/floatval.php.html#9\">floatval::filter<\/a>"],[100,1,"<a href=\"Filter\/intval.php.html#9\">intval::filter<\/a>"],[100,1,"<a href=\"Filter\/strip_tags.php.html#9\">strip_tags::filter<\/a>"],[0,1,"<a href=\"Filter\/strtolower.php.html#9\">strtolower::filter<\/a>"],[100,1,"<a href=\"Filter\/trim.php.html#9\">trim::filter<\/a>"],[100,1,"<a href=\"User.php.html#21\">User::getTableDefinition<\/a>"],[0,1,"<a href=\"User.php.html#76\">User::getDisabledMethods<\/a>"],[0,7,"<a href=\"User.php.html#86\">User::validate<\/a>"],[0,1,"<a href=\"User.php.html#123\">User::filter<\/a>"],[100,1,"<a href=\"User.php.html#132\">User::setPassword<\/a>"],[0,1,"<a href=\"User.php.html#136\">User::setPurePassword<\/a>"],[60,4,"<a href=\"User.php.html#144\">User::validatePassword<\/a>"],[100,1,"<a href=\"User.php.html#158\">User::passwordEncode<\/a>"],[0,1,"<a href=\"User.php.html#168\">User::getCreateTimeByFormat<\/a>"],[0,1,"<a href=\"User.php.html#178\">User::getUpdateTimeByFormat<\/a>"],[0,2,"<a href=\"User.php.html#190\">User::getUsername<\/a>"],[0,1,"<a href=\"User.php.html#204\">User::setUsername<\/a>"],[0,2,"<a href=\"User.php.html#214\">User::getRoleDescriptions<\/a>"],[0,6,"<a href=\"User.php.html#231\">User::hasPermission<\/a>"],[0,1,"<a href=\"UserLog.php.html#29\">UserLog::getTableDefinition<\/a>"],[0,1,"<a href=\"UserLog.php.html#68\">UserLog::validate<\/a>"],[0,1,"<a href=\"UserLog.php.html#81\">UserLog::getDisabledMethods<\/a>"],[0,5,"<a href=\"UserLog.php.html#102\">UserLog::getUser<\/a>"],[0,1,"<a href=\"UserLogHelper.php.html#16\">UserLogHelper::addLogin<\/a>"],[0,2,"<a href=\"UserLogHelper.php.html#24\">UserLogHelper::addLoginFail<\/a>"],[0,1,"<a href=\"UserLogHelper.php.html#40\">UserLogHelper::addLogout<\/a>"],[0,1,"<a href=\"UserLogHelper.php.html#48\">UserLogHelper::addChangePassword<\/a>"],[0,3,"<a href=\"UserLogHelper.php.html#57\">UserLogHelper::save<\/a>"],[0,1,"<a href=\"UserLogs.php.html#24\">UserLogs::mapRow<\/a>"],[0,3,"<a href=\"UserLogs.php.html#46\">UserLogs::addUserLog<\/a>"],[0,2,"<a href=\"UserLogs.php.html#65\">UserLogs::removeCache<\/a>"],[0,2,"<a href=\"UserLogs.php.html#85\">UserLogs::getUserLog<\/a>"],[0,1,"<a href=\"UserLogs.php.html#104\">UserLogs::findUserLogs<\/a>"],[0,1,"<a href=\"UserLogs.php.html#118\">UserLogs::numFindUserLogs<\/a>"],[0,8,"<a href=\"UserLogs.php.html#131\">UserLogs::findUserLogsReal<\/a>"],[0,1,"<a href=\"Users.php.html#23\">Users::mapRow<\/a>"],[0,3,"<a href=\"Users.php.html#45\">Users::addUser<\/a>"],[0,2,"<a href=\"Users.php.html#66\">Users::updateUser<\/a>"],[0,1,"<a href=\"Users.php.html#80\">Users::disableUser<\/a>"],[0,2,"<a href=\"Users.php.html#90\">Users::removeCache<\/a>"],[0,5,"<a href=\"Users.php.html#108\">Users::getUserByAuthenticate<\/a>"],[0,2,"<a href=\"Users.php.html#140\">Users::getUser<\/a>"],[0,3,"<a href=\"Users.php.html#153\">Users::getUserByAccount<\/a>"],[0,5,"<a href=\"Users.php.html#177\">Users::getRoleInfo<\/a>"],[0,1,"<a href=\"Users.php.html#217\">Users::findUsers<\/a>"],[0,1,"<a href=\"Users.php.html#233\">Users::numFindUsers<\/a>"],[0,5,"<a href=\"Users.php.html#258\">Users::findUsersReal<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
