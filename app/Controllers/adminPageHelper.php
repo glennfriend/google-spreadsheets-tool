@@ -13,16 +13,25 @@ function getParam($key, $defaultValue=null)
     return Bridge\Input::getParam($key, $defaultValue);
 }
 
+/**
+ *  產生 url
+ */
 function url($segment, $args=[])
 {
     return di('adminUrl')->createUrl($segment, $args);
 }
 
+/**
+ *  產生 home 的 url
+ */
 function homeUrl($segment, $args=[])
 {
     return di('homeUrl')->createUrl($segment, $args);
 }
 
+/**
+ *  導向某一個頁面
+ */
 function redirect($url, $isFullUrl=false)
 {
     if (isCli()) {
@@ -35,6 +44,9 @@ function redirect($url, $isFullUrl=false)
     return SlimManager::getResponse()->withHeader('Location', $url);
 }
 
+/**
+ *  導向 home page 某一個頁面
+ */
 function redirectHome($url, $isFullUrl=false)
 {
     if (isCli()) {

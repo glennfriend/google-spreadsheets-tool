@@ -5,6 +5,7 @@ use Bridge\Input;
 use App\Utility\Console\CliManager;
 use App\Utility\Identity\UserManager;
 use App\Utility\Project\SlimManager;
+use App\Utility\Project\HeaderFactory;
 
 /**
  *
@@ -48,7 +49,17 @@ class BaseController
         }
 
         //
-        return $this->$method();
+        $this->$method();
+        return $this->getResponse();
+    }
+
+    /**
+     *  slim 最後輸出的 response
+     */
+    protected function getResponse()
+    {
+        $response = SlimManager::getResponse();
+        return HeaderFactory::pipe($response);
     }
 
     /**

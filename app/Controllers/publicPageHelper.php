@@ -13,11 +13,17 @@ function getParam($key, $defaultValue=null)
     return Bridge\Input::getParam($key, $defaultValue);
 }
 
+/**
+ *  產生 url
+ */
 function url($segment, $args=[])
 {
     return di('homeUrl')->CreateUrl($segment, $args);
 }
 
+/**
+ *  導向某一個頁面
+ */
 function redirect($url, $isFullUrl=false)
 {
     if (isCli()) {
@@ -31,6 +37,9 @@ function redirect($url, $isFullUrl=false)
     return SlimManager::getResponse()->withHeader('Location', $url);
 }
 
+/**
+ *  導向 admin page 某一個頁面
+ */
 function redirectAdmin($url)
 {
     if (isCli()) {

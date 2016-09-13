@@ -23,20 +23,28 @@ class SlimManager
 
     -------------------------------------------------------------------------------- */
 
+    /**
+     *
+     */
     public static function getRouter()
     {
         return self::$app->getContainer()->get('router');
     }
 
+    /**
+     *
+     */
     public static function getRequest()
     {
         return self::$request;
     }
 
+    /**
+     *
+     */
     public static function getResponse()
     {
         return self::$response;
     }
-
 
 }
